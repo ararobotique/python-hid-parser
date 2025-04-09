@@ -898,9 +898,10 @@ class ReportDescriptor():
                             offset_list[report_id] = 0
 
                 elif tag in (TagGlobal.UNIT, TagGlobal.UNIT_EXPONENT):
-                    warnings.warn(HIDUnsupportedWarning(
-                        "Data specifies a unit or unit exponent, but we don't support those yet"
-                    ))
+                    pass
+                    # warnings.warn(HIDUnsupportedWarning(
+                    #     "Data specifies a unit or unit exponent, but we don't support those yet"
+                    # ))
 
                 elif tag == TagGlobal.REPORT_COUNT:
                     report_count = data
